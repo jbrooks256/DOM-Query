@@ -8,9 +8,13 @@ $button.click(function () {
   alert($("#text").val());
 });
 
+// number 3
 $("body").append($("<div>Hover Here</div>"));
 $("div").hover(function () {
   $(this).css("background-color", "red");
+}, function (){
+    $(this).css("background-color", "initial");
+
 });
 
 $("body").append($("<p>Random Paragraph Text</p>"));

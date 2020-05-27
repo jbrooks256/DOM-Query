@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // number 1
     let niceButton = document.createElement("button");
     niceButton.innerText = "Click Me";
     document.body.appendChild(niceButton);
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let typedMessage = document.getElementById("textBox").innerText;
     let displayTextButton = document.getElementById("displayButton");
     displayTextButton.addEventListener("click", function() {
-        alert(typedMessage);
+        alert(typedMessage.value);
     })
 
     let div = document.createElement("div");
