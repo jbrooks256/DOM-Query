@@ -17,6 +17,7 @@ $("div").hover(function () {
 
 });
 
+// number 4
 $("body").append($("<p>Random Paragraph Text</p>"));
 $("p").click(function() {
     $(this).css("color", getRandomColor());

@@ -6,20 +6,31 @@ document.addEventListener("DOMContentLoaded", function() {
     niceButton.addEventListener("click", function() {
         alert("Hello World!");
     })
-
-    let typedMessage = document.getElementById("textBox").innerText;
+    // number 2
+    let typedMessage = document.getElementById("textBox");
     let displayTextButton = document.getElementById("displayButton");
     displayTextButton.addEventListener("click", function() {
         alert(typedMessage.value);
     })
 
-    let div = document.createElement("div");
-    div.addEventListener("mouseover", function() {
-        getRandomColor();
+    // number 3
+    let div1 = document.createElement("div");
+    div1.innerText = "Hover Here";
+    div1.addEventListener("mouseover", function() {
+        div1.style.backgroundColor = getRandomColor();
+    });
+    document.body.appendChild(div1);
+
+    // number 4
+    let para4 = document.createElement("p");
+    para4.innerText = "Random Paragraph Text";
+    para4.addEventListener("click", function() {
+        para4.style.color = getRandomColor();
     })
+    document.body.appendChild(para4);
 
-    document.body.appendChild(div);
-
+    // number 5
+    
 })
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
